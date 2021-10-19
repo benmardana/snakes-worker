@@ -1,0 +1,17 @@
+compatibility_date = "2021-10-19"
+type="javascript"
+name = "snakes-worker"
+zone_id = ""
+account_id = ""
+route = ""
+workers_dev = true
+
+kv_namespaces = [ 
+  { binding = "SNAKES", preview_id = "PREVIEW_KEY", id = "LIVE_KEY" }
+]
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
+
